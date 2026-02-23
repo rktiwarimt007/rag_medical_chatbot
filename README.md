@@ -1,6 +1,6 @@
 # 🏥 RAG Medical Chatbot
 
-A Retrieval-Augmented Generation (RAG) based Medical Chatbot built using **LangChain**, **Flask**, **OpenAI GPT**, and **Pinecone**.  
+A Retrieval-Augmented Generation (RAG) based Medical Chatbot built using **LangChain**, **Flask**, **OpenAI GPT**, **HuggingFace**, and **Pinecone**.  
 This project enables intelligent medical question answering by retrieving relevant context from a vector database and generating responses using an LLM.
 
 ---
@@ -86,6 +86,7 @@ http://localhost:8080
 - **LangChain**
 - **Flask**
 - **OpenAI GPT**
+- **HuggingFace**
 - **Pinecone**
 - **Docker**
 - **AWS (EC2 + ECR)**
@@ -202,20 +203,33 @@ The CI/CD pipeline performs the following steps automatically:
 ## 📂 Project Structure
 
 ``
-rag_medical_chatbot/
-├── data/Medical_book.pdf
-├── research/trails.ipynb
-├── src/
-        ├── helper.py
-        ├── prompt.py
-├── static/style.css
-├── templates/chat.html
+RAG_MEDICAL_CHATBOT/
 │
-├── app.py
-├── store_index.py
-├── requirements.txt
-├── Dockerfile
-├── .env
+├── data/
+│   └── Medical_book.pdf          # Source medical document
+│
+├── research/
+│   └── trials.ipynb              # Experimentation notebook
+│
+├── src/
+│   ├── __init__.py
+│   ├── helper.py                 # Utility functions
+│   └── prompt.py                 # Prompt templates
+│
+├── static/
+│   └── style.css                 # CSS styling
+│
+├── templates/
+│   └── chat.html                 # Frontend UI
+│
+├── app.py                        # Main Flask application
+├── store_index.py                # Embedding + Pinecone storage
+├── requirements.txt              # Dependencies
+├── setup.py                      # Package setup
+├── template.sh                   # Shell script
+├── .env                          # API keys (not pushed)
+├── .gitignore
+├── LICENSE
 └── README.md
 ``
 
