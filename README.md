@@ -202,8 +202,7 @@ The CI/CD pipeline performs the following steps automatically:
 
 ## 📂 Project Structure
 
-``
-RAG_MEDICAL_CHATBOT/
+```RAG_MEDICAL_CHATBOT/
 │
 ├── data/
 │   └── Medical_book.pdf          # Source medical document
@@ -231,7 +230,7 @@ RAG_MEDICAL_CHATBOT/
 ├── .gitignore
 ├── LICENSE
 └── README.md
-``
+```
 
 ---
 
