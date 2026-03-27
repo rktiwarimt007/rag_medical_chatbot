@@ -127,7 +127,7 @@ Create a repository to store Docker images.
 Example:
 
 ``
-<aws_account_id>.dkr.ecr.us-east-1.amazonaws.com/medicalbot
+355222350521.dkr.ecr.ap-southeast-2.amazonaws.com/rag_medical_chatbot
 ``
 
 Save the repository URI.
